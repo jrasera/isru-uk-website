@@ -916,7 +916,7 @@ section { padding: 6rem 2rem; }
           </div>
           <div>
             <h4>Email</h4>
-            <p><a href="mailto:uk_isru@outlook.com">uk_isru@outlook.com</a></p>
+            <p><a href="mailto:hello@isru.uk">hello@isru.uk</a></p>
           </div>
         </div>
         <div class="contact-item">
@@ -971,7 +971,7 @@ section { padding: 6rem 2rem; }
             <textarea id="message" placeholder="How can we help?"></textarea>
           </div>
           <button class="btn btn-submit" onclick="handleSubmit()">Send Message</button>
-          <p id="formNote" style="font-size:0.82rem;color:var(--gray-500);display:none;">This form will open your email client with the message pre-filled. Alternatively, email us directly at uk_isru@outlook.com.</p>
+          <p id="formNote" style="font-size:0.82rem;color:var(--gray-500);display:none;">This form will open your email client with the message pre-filled. Alternatively, email us directly at hello@isru.uk.</p>
         </div>
       </div>
     </div>
@@ -1058,7 +1058,7 @@ function handleSubmit() {
   const message = document.getElementById('message').value;
 
   const body = `Name: ${name}\nOrganisation: ${org}\nEmail: ${email}\n\n${message}`;
-  const mailto = `mailto:uk_isru@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const mailto = `mailto:hello@isru.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = mailto;
 
   document.getElementById('formNote').style.display = 'block';
