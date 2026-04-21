@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>People — ISRU UK</title>
+<meta name="description" content="Meet the ISRU UK Management Committee and Directorate Heads.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+.person-card { background: var(--white); border: 1px solid var(--gray-100); border-radius: 14px; overflow: hidden; transition: border-color 0.25s, box-shadow 0.25s; }
+.person-card:hover { border-color: var(--blue); box-shadow: 0 8px 32px rgba(46,91,171,0.08); }
+.person-photo { width: 100%; aspect-ratio: 1; background: var(--gray-100); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.person-photo img { width: 100%; height: 100%; object-fit: cover; }
+.person-photo-placeholder { width: 100%; height: 100%; background: linear-gradient(135deg, var(--navy-light) 0%, var(--navy-mid) 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: rgba(255,255,255,0.25); }
+.person-info { padding: 1.25rem 1.5rem 1.5rem; }
+.person-role { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--blue); margin-bottom: 0.3rem; }
+.person-name { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.2rem; }
+.person-org { font-size: 0.82rem; color: var(--gray-500); margin-bottom: 0.75rem; }
+.person-bio { font-size: 0.84rem; color: var(--gray-700); line-height: 1.6; }
+
+/* Directorate heads slightly smaller / different treatment */
+.dir-heads-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; margin-top: 2.5rem; }
+.dir-head-card { display: flex; gap: 1.25rem; align-items: flex-start; padding: 1.25rem 1.5rem; background: var(--white); border: 1px solid var(--gray-100); border-radius: 12px; transition: border-color 0.25s, box-shadow 0.25s; }
+.dir-head-card:hover { border-color: var(--blue); box-shadow: 0 4px 20px rgba(46,91,171,0.07); }
+.dir-head-avatar { flex-shrink: 0; width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, var(--navy-light), var(--navy-mid)); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; overflow: hidden; }
+.dir-head-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.dir-head-name { font-size: 0.98rem; font-weight: 700; color: var(--navy); margin-bottom: 0.15rem; }
+.dir-head-role { font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--blue); margin-bottom: 0.2rem; }
+.dir-head-org { font-size: 0.8rem; color: var(--gray-500); margin-bottom: 0.5rem; }
+.dir-head-bio { font-size: 0.82rem; color: var(--gray-700); line-height: 1.55; }
+
+.committee-note { padding: 1.25rem 1.5rem; background: rgba(46,91,171,0.05); border-radius: 10px; border-left: 3px solid var(--blue); font-size: 0.9rem; color: var(--gray-700); margin-bottom: 2rem; }
+</style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="breadcrumb"><a href="home.html">Home</a> / People</div>
+    <h1>People</h1>
+    <p>The Management Committee and Directorate Heads who coordinate the ISRU UK network.</p>
+  </div>
+</div>
+
+<!-- EXECUTIVE COMMITTEE -->
+<section>
+  <div class="section-inner">
+    <span class="section-label fade-in">Leadership</span>
+    <h2 class="section-title fade-in">Management Committee</h2>
+    <p class="section-subtitle fade-in">The Management Committee oversees the strategic direction and day-to-day governance of ISRU UK. Positions rotate through a structured progression to ensure continuity and fresh perspectives.</p>
+
+    <div class="committee-note fade-in">
+      ℹ&nbsp; The Management Committee is currently transitioning to the structure described in the <a href="home.html#structure">Terms of Reference</a>. The below reflects the current and incoming committee.
+    </div>
+
+    <div class="people-grid">
+      <!-- Chair Emeritus -->
+      <div class="person-card fade-in">
+        <div class="person-photo"><div class="person-photo-placeholder">👤</div></div>
+        <div class="person-info">
+          <div class="person-role">Chair Emeritus</div>
+          <div class="person-name">Dr Hannah Sargeant</div>
+          <div class="person-org">University of Leicester</div>
+          <p class="person-bio">Hannah is a researcher at the University of Leicester. She has a PhD in Planetary Science investigating water production from lunar regolith for the ESA PROSPECT payload. Her research includes icy simulant development and novel applications of space nuclear power systems.</p>
+        </div>
+      </div>
+
+      <!-- Chair -->
+      <div class="person-card fade-in fade-in-delay-1">
+        <div class="person-photo"><div class="person-photo-placeholder">👤</div></div>
+        <div class="person-info">
+          <div class="person-role">Chair</div>
+          <div class="person-name">Prof. Patrick Harkness</div>
+          <div class="person-org">University of Glasgow</div>
+          <p class="person-bio">Patrick is Professor of Exploration Technology at the University of Glasgow. His research focuses on the behaviour and fluidisation of granular materials, with applications in polar-terrestrial and planetary surface environments, and space propulsion.</p>
+        </div>
+      </div>
+
+      <!-- Co-Chair A -->
+      <div class="person-card fade-in fade-in-delay-2">
+        <div class="person-photo"><div class="person-photo-placeholder">👤</div></div>
+        <div class="person-info">
+          <div class="person-role">Co-Chair A</div>
+          <div class="person-name">Dr Joshua Rasera</div>
+          <div class="person-org">Imperial College London</div>
+          <p class="person-bio">Joshua is a postdoctoral researcher in the Space and Terrestrial Resource Group at Imperial College London. His research focuses on developing sustainable mineral beneficiation techniques for terrestrial mining and advancing mineral processing methods for lunar and extraterrestrial environments.</p>
+        </div>
+      </div>
+
+      <!-- Co-Chair B -->
+      <div class="person-card fade-in">
+        <div class="person-photo"><div class="person-photo-placeholder">👤</div></div>
+        <div class="person-info">
+          <div class="person-role">Co-Chair B</div>
+          <div class="person-name">Position to be elected</div>
+          <div class="person-org">&nbsp;</div>
+          <p class="person-bio">The Co-Chair B position is open for election. If you are interested in contributing to the leadership of ISRU UK, please <a href="home.html#contact">get in touch</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIRECTORATE HEADS -->
+<section class="section-alt">
+  <div class="section-inner">
+    <span class="section-label fade-in">Directorates</span>
+    <h2 class="section-title fade-in">Directorate Heads</h2>
+    <p class="section-subtitle fade-in">Each directorate is led by a specialist. Members can reach out to the relevant head to get involved in that directorate's work.</p>
+    <div class="dir-heads-grid">
+
+      <div class="dir-head-card fade-in">
+        <div class="dir-head-avatar">🌱</div>
+        <div>
+          <div class="dir-head-role">Mission Opportunities &amp; Funding</div>
+          <div class="dir-head-name">Position to be confirmed</div>
+          <div class="dir-head-org">&nbsp;</div>
+          <p class="dir-head-bio">Responsible for identifying mission opportunities, funding calls, and strategic partnerships to advance UK ISRU capabilities.</p>
+        </div>
+      </div>
+
+      <div class="dir-head-card fade-in fade-in-delay-1">
+        <div class="dir-head-avatar">⚖</div>
+        <div>
+          <div class="dir-head-role">Law, Policy &amp; Regulation</div>
+          <div class="dir-head-name">Prof. Sa'id Mosteshar</div>
+          <div class="dir-head-org">London Institute of Space Policy and Law</div>
+          <p class="dir-head-bio">Professor of Space Policy and Law and Director of ISPL. A practising Barrister and California Attorney, he advises government and private clients on space policy and law.</p>
+        </div>
+      </div>
+
+      <div class="dir-head-card fade-in fade-in-delay-2">
+        <div class="dir-head-avatar">🔭</div>
+        <div>
+          <div class="dir-head-role">Planetary Science &amp; Prospecting</div>
+          <div class="dir-head-name">Prof. Ian Crawford</div>
+          <div class="dir-head-org">Birkbeck, University of London</div>
+          <p class="dir-head-bio">Professor of Planetary Science and Astrobiology. His research focuses on lunar exploration, remote sensing of the lunar surface, analysis of lunar samples, and the prospects for lunar resources.</p>
+        </div>
+      </div>
+
+      <div class="dir-head-card fade-in">
+        <div class="dir-head-avatar">⚙</div>
+        <div>
+          <div class="dir-head-role">Resource Extraction &amp; Processing</div>
+          <div class="dir-head-name">Dr Kate Smith</div>
+          <div class="dir-head-org">University of Manchester</div>
+          <p class="dir-head-bio">Lead of the Space Systems research group. Over 15 years' experience in space technologies, with PI roles on ESA, UKSA, and EPSRC projects focused on lunar ISRU excavation technologies.</p>
+        </div>
+      </div>
+
+      <div class="dir-head-card fade-in fade-in-delay-1">
+        <div class="dir-head-avatar">🛰</div>
+        <div>
+          <div class="dir-head-role">Infrastructure &amp; Robotics</div>
+          <div class="dir-head-name">Matt Cosby</div>
+          <div class="dir-head-org">Goonhilly Earth Station</div>
+          <p class="dir-head-bio">Chief Technology Officer at Goonhilly, working to expand capabilities for commercial deep space communications. Also the UK Space Agency representative for CCSDS and UK delegate for IOAG.</p>
+        </div>
+      </div>
+
+      <div class="dir-head-card fade-in fade-in-delay-2">
+        <div class="dir-head-avatar">🔧</div>
+        <div>
+          <div class="dir-head-role">In-Space Manufacturing</div>
+          <div class="dir-head-name">David Hawkins</div>
+          <div class="dir-head-org">Metalysis</div>
+          <p class="dir-head-bio">Chief Commercial &amp; Marketing Officer at Metalysis, a global leader in metal powder manufacturing using the patented FFC Cambridge process, with significant experience in lunar regolith reduction.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--navy);padding:4rem 2rem;text-align:center;">
+  <div class="section-inner">
+    <h2 style="color:var(--white);font-size:1.8rem;margin-bottom:0.75rem;" class="fade-in">Interested in getting involved?</h2>
+    <p style="color:var(--gray-300);margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto;" class="fade-in">Membership is free and open to all. Join via the JISCMail list or contact us directly.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;" class="fade-in">
+      <a href="home.html#join" class="btn btn-primary">Join the Network</a>
+      <a href="home.html#contact" class="btn btn-outline-white">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

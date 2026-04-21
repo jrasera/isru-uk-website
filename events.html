@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events — ISRU UK</title>
+<meta name="description" content="Upcoming and past ISRU UK meetings, events, and community gatherings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+/* Calendar section */
+.calendar-wrap { background: var(--off-white); border-radius: 16px; overflow: hidden; border: 1px solid var(--gray-100); margin-top: 2rem; }
+.calendar-wrap iframe { display: block; width: 100%; border: none; }
+.calendar-setup { padding: 3rem 2rem; text-align: center; }
+.calendar-setup h3 { font-size: 1.1rem; font-weight: 600; color: var(--navy); margin-bottom: 0.75rem; }
+.calendar-setup p { font-size: 0.9rem; color: var(--gray-500); max-width: 480px; margin: 0 auto 1.5rem; line-height: 1.65; }
+.calendar-setup code { background: rgba(46,91,171,0.08); padding: 0.1rem 0.4rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.8rem; }
+.calendar-icon { font-size: 3rem; margin-bottom: 1rem; }
+
+/* Meetings */
+.meeting-card { margin-bottom: 1.25rem; }
+.meeting-card-header { margin-bottom: 0.75rem; }
+.meeting-date { font-family: var(--font-mono); font-size: 0.75rem; color: var(--gray-500); margin-bottom: 0.3rem; }
+.meeting-title { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; }
+.meeting-desc { font-size: 0.88rem; color: var(--gray-700); line-height: 1.6; margin: 0.5rem 0 0.75rem; }
+.meeting-links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+/* Past meetings */
+.past-meeting { display: grid; grid-template-columns: 140px 1fr; gap: 1.5rem; padding: 1.5rem 0; border-bottom: 1px solid var(--gray-100); align-items: start; }
+.past-meeting:first-child { padding-top: 0; }
+.past-meeting-date { font-family: var(--font-mono); font-size: 0.78rem; color: var(--gray-500); padding-top: 0.15rem; line-height: 1.4; }
+.past-meeting-info h4 { font-size: 0.98rem; font-weight: 600; color: var(--navy); margin-bottom: 0.25rem; }
+.past-meeting-info p { font-size: 0.86rem; color: var(--gray-700); margin-bottom: 0.5rem; line-height: 1.55; }
+
+/* Two-col layout */
+.events-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2.5rem; align-items: start; }
+
+/* Community events note */
+.community-note { background: rgba(221,9,50,0.05); border: 1px solid rgba(221,9,50,0.12); border-radius: 10px; padding: 1.25rem 1.5rem; font-size: 0.88rem; color: var(--gray-700); margin-bottom: 2rem; }
+.community-note strong { color: var(--red); }
+
+.setup-notice { background: rgba(46,91,171,0.06); border: 1px solid rgba(46,91,171,0.15); border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 2rem; font-size: 0.88rem; color: var(--gray-700); }
+.setup-notice strong { color: var(--navy); }
+.setup-notice code { background: rgba(46,91,171,0.08); padding: 0.1rem 0.4rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.82rem; }
+
+@media (max-width: 860px) {
+  .events-grid { grid-template-columns: 1fr; }
+  .past-meeting { grid-template-columns: 1fr; gap: 0.25rem; }
+}
+</style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="breadcrumb"><a href="home.html">Home</a> / Events</div>
+    <h1>Events</h1>
+    <p>Upcoming ISRU UK meetings, community events, and past meeting archive.</p>
+  </div>
+</div>
+
+<!-- CALENDAR -->
+<section>
+  <div class="section-inner">
+    <span class="section-label fade-in">Calendar</span>
+    <h2 class="section-title fade-in">ISRU UK Calendar</h2>
+    <p class="section-subtitle fade-in">General Meetings are held six times per year. All are open to the community — members of the general public are welcome in a listen-only capacity.</p>
+
+    <div class="calendar-wrap fade-in">
+      <!--
+        TO SET UP THE CALENDAR:
+        1. Create an ISRU UK Google Calendar (or use an existing one)
+        2. Go to Google Calendar Settings → the calendar → "Integrate calendar"
+        3. Copy the "Embed code" (the <iframe> snippet)
+        4. Replace the placeholder below with your iframe embed code
+        5. Suggested iframe height: 600px
+
+        Example embed looks like:
+        <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Europe%2FLondon"
+          style="border:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+      -->
+      <div class="calendar-setup">
+        <div class="calendar-icon">📅</div>
+        <h3>Calendar coming soon</h3>
+        <p>The ISRU UK Google Calendar will appear here once configured. In the meantime, upcoming meetings are listed below, and all events are announced via the <a href="https://www.jiscmail.ac.uk/cgi-bin/webadmin?A0=PLANETARY-ISRU" target="_blank" rel="noopener">JISCMail list</a>.</p>
+        <p style="margin-top:1rem;font-size:0.8rem;color:var(--gray-500);">
+          Administrators: replace the placeholder comment in <code>events.html</code> with your Google Calendar embed code.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING & PAST -->
+<section class="section-alt">
+  <div class="section-inner">
+
+    <div class="setup-notice" id="setupNotice">
+      <strong>For administrators:</strong> The meetings list is powered by a Google Sheet. Open <code>assets/js/main.js</code>, find <code>MEETINGS_SHEET_URL</code>, and replace the placeholder with your published CSV link. Columns needed: <code>date | title | description | slides_link | recording_link | type</code>. Sample entries are shown until then.
+    </div>
+
+    <div class="community-note">
+      <strong>Open meetings:</strong> All General Meetings are open to the entire ISRU UK community. Members of the general public are welcome to attend in a listen-only capacity. Upcoming meetings are announced via the JISCMail list.
+    </div>
+
+    <div class="events-grid">
+      <div>
+        <span class="section-label">Upcoming</span>
+        <h3 class="section-title" style="font-size:1.5rem;">Next Meetings</h3>
+        <div id="upcomingMeetings"></div>
+      </div>
+      <div>
+        <span class="section-label">Archive</span>
+        <h3 class="section-title" style="font-size:1.5rem;">Past Meetings</h3>
+        <div id="pastMeetings"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY EVENTS NOTE -->
+<section>
+  <div class="section-inner">
+    <span class="section-label fade-in">Community</span>
+    <h2 class="section-title fade-in">Community Events</h2>
+    <p class="section-subtitle fade-in">ISRU UK members regularly attend and present at international events. Recent community events are shared via the JISCMail list and on the News page.</p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;" class="fade-in">
+      <a href="news.html" class="btn btn-blue">View News &amp; Updates</a>
+      <a href="https://www.jiscmail.ac.uk/cgi-bin/webadmin?A0=PLANETARY-ISRU" class="btn btn-outline" target="_blank" rel="noopener">Subscribe to JISCMail</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="assets/js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    loadMeetingsFeed('upcomingMeetings', 'pastMeetings');
+    if (typeof MEETINGS_SHEET_URL !== 'undefined' && MEETINGS_SHEET_URL !== 'YOUR_MEETINGS_SHEET_CSV_URL_HERE') {
+      const n = document.getElementById('setupNotice');
+      if (n) n.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>
