@@ -13,8 +13,8 @@
    4. Do the same for the meetings sheet (second tab of same doc)
       and paste that URL as MEETINGS_SHEET_URL
 */
-const NEWS_SHEET_URL    = 'YOUR_NEWS_SHEET_CSV_URL_HERE';
-const MEETINGS_SHEET_URL = 'YOUR_MEETINGS_SHEET_CSV_URL_HERE';
+const NEWS_SHEET_URL    = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR_KGAOgI3WA7z6cFtVrcenovr8vzOfEn0wcZBWVPTy6AqQRkYzP9MzSuHg5w0W4GSQmBSD7bU2Iv07/pub?gid=0&single=true&output=csv';
+const MEETINGS_SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR_KGAOgI3WA7z6cFtVrcenovr8vzOfEn0wcZBWVPTy6AqQRkYzP9MzSuHg5w0W4GSQmBSD7bU2Iv07/pub?gid=1309897780&single=true&output=csv';
 
 /* ---- LOGO SVG (colour, light backgrounds) ---- */
 const LOGO_SVG = `<svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
