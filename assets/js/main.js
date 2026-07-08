@@ -106,7 +106,7 @@ function buildFooter() {
           <ul>
             <li><a href="https://www.gov.uk/government/organisations/uk-space-agency" target="_blank" rel="noopener">UK Space Agency</a></li>
             <li><a href="https://www.esa.int" target="_blank" rel="noopener">ESA</a></li>
-            <li><a href="mailto:uk_isru@outlook.com">uk_isru@outlook.com</a></li>
+            <li><a href="mailto:hello@isru.uk">hello@isru.uk</a></li>
           </ul>
         </div>
       </div>
@@ -191,7 +191,7 @@ async function loadNewsFeed(containerId, filterBarId) {
     renderNews(rows, container);
     if (filterBar) setupFilters(filterBar, container);
   } catch (e) {
-    container.innerHTML = `<div class="empty-state"><p>Could not load news. Please check back soon or email <a href="mailto:uk_isru@outlook.com">uk_isru@outlook.com</a>.</p></div>`;
+    container.innerHTML = `<div class="empty-state"><p>Could not load news. Please check back soon or email <a href="mailto:hello@isru.uk">hello@isru.uk</a>.</p></div>`;
   }
 }
 
@@ -336,7 +336,7 @@ function initContactForm() {
     const subject = (document.getElementById('c-subject') || {}).value || 'Website Enquiry';
     const message = (document.getElementById('c-message') || {}).value || '';
     const body = `Name: ${name}\nOrganisation: ${org}\nEmail: ${email}\n\n${message}`;
-    window.location.href = `mailto:uk_isru@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:hello@isru.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 }
 
